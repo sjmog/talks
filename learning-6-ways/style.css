@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* typography */
+
+* {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+}
+
+/* layout */
+
+body {
+  background: #fafafa;
+}
+
+main {
+  width: 100vw;
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+aside {
+  height: 20vh;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+aside p {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 2rem;
+  color: #fafafa;
+}
+
+.name {
+  font-size: 2em;
+  margin-bottom: 0.7rem;
+}
+
+.job, .twitter {
+  margin-bottom: 0.2rem;
+  color: #afafaf;
+}
+
+.twitter {
+  margin-bottom: 2rem;
+}
+
+/* slides effect */
+
+.segment {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: inline-block;
+  line-height: 0.74;
+}
+
+.segment + .segment {
+  padding-left: 48px;
+}
+
+.unveiled {
+  opacity: 1;
+}
+
+[class^='bigtext-line'] {
+  line-height: 0.74;
+  padding: 0.14em 0;
+}
+
+/* overrides */
+
+* {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
